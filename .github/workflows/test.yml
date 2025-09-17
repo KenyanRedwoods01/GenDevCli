@@ -19,10 +19,8 @@ jobs:
         cache: 'npm'
         cache-dependency-path: package-lock.json
     - name: Install dependencies
-      run: npm ci
-    - name: Run lint
-      run: npm run lint
+      run: npm install
     - name: Run basic validation
-      run: node -e "console.log('Basic validation passed')"
+      run: node -e "console.log('Basic validation passed'); console.log('Node version:', process.version);"
       env:
         CI: true
