@@ -9,7 +9,6 @@
   "scripts": {
     "start": "node ./bin/gendev.js",
     "test": "echo \"Tests would run here\" && exit 0",
-    "lint": "echo \"Linting would run here\" && exit 0",
     "dev": "node ./bin/gendev.js"
   },
   "dependencies": {
@@ -19,9 +18,6 @@
     "gradient-string": "^2.0.1",
     "node-fetch": "^3.3.2",
     "inquirer": "^9.2.12"
-  },
-  "devDependencies": {
-    "eslint": "^8.57.0"
   },
   "keywords": [
     "cli",
